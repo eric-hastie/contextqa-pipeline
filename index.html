@@ -203,13 +203,18 @@ table.board td.num{font-variant-numeric:tabular-nums;text-align:right}
 a.acctlink{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hairline)}
 a.acctlink:hover{color:var(--link)}
 .acct{scroll-margin-top:64px}
+details.method{margin:14px 0 4px;background:#fff;border:1px solid var(--line,#e3e3e3);border-radius:10px;padding:12px 16px}
+details.method>summary{cursor:pointer;font-size:14.5px}
+details.method p{font-size:13.5px;line-height:1.55;margin:9px 0 0}
+details.method p.mnote{color:var(--ink2,#666);font-size:12.5px;border-top:1px solid var(--line,#e3e3e3);padding-top:8px;margin-top:11px}
 </style></head><body>
 <header><div class="wrap">
 <div class="pagebadge p">ContextQA - Similar Customers</div>
-<h1>ContextQA - Similar Customers</h1>
+<h1>ContextQA prospect list (similar customers)</h1>
 <p class="xnav">Companion page: <a href="https://eric-hastie.github.io/contextqa-territory/">ContextQA - MidMarket Target Accounts &rarr;</a></p>
 <p class="dateline">Updated July 21, 2026 · 73 companies · 14 Hot · 23 Warm · 37 with sequences</p>
 <p class="lede">Start from the customers ContextQA has actually won, find the companies that look like them, then rank by live buying signals. Every account below is a 50-5,000-employee software organization matched to a verified customer cluster, scored on four researched signals: open QA/SDET reqs on its live careers board, funding or M&amp;A in the last 12 months, new engineering leadership, and AI or expansion activity. Every Hot and Warm account carries ready-to-send sequences at three buyer altitudes - click its name in the board to jump to them.</p>
+<details class="method"><summary><b>How this list was built</b> (sourcing, scoring, and what "Hot" means)</summary><p><b>1. Start from won customers, not a guess at the ICP.</b> The seed set is the customers ContextQA has actually won and published. Those get clustered by what they genuinely share - vertical, headcount band, release cadence, and testing surface (web, mobile, API) - rather than by SIC code.</p><p><b>2. Find the look-alikes.</b> Each cluster becomes a search pattern for 50-5,000-employee software organizations that resemble a customer ContextQA has already proven value with. Every account here is matched to a specific verified cluster, so "why this company" always has an answer.</p><p><b>3. Score four researched signals.</b> Open QA/SDET reqs on the company's own live careers board (the timing trigger, weighted heaviest), funding or M&amp;A in the last 12 months, new engineering leadership, and AI or expansion activity that raises release risk. Each signal is checked against a public source and dated - none of it is inferred from firmographics or bought from a data vendor.</p><p><b>4. Rank and cut.</b> The weighted score sets Hot / Warm / Watch. Hot means the signals justify a call now, not that the logo is big. Accounts cool automatically as their reqs close, so the ranking answers "who first this week" rather than "who is biggest."</p><p class="mnote">Every company, req, funding round, and leadership move is real and hand-verified against public sources. The clustering, scoring model, and tiering are my own.</p></details>
 </div></header>
 <main class="wrap">
 <h2 class="boardhead" style="margin-top:8px" id="bhead">The board <span class="fhint">&#9662; click to filter</span></h2><div class="fpanel" id="fpanel"><b>HQ</b><button class="on" data-g="region" data-v="all">All</button><button data-g="region" data-v="na">North America</button><button data-g="region" data-v="row">Rest of world</button><b>Headcount</b><button class="on" data-g="hc" data-v="all">All</button><button data-g="hc" data-v="b1">&lt;500</button><button data-g="hc" data-v="b2">500-2,000</button><button data-g="hc" data-v="b3">2,000+</button></div>
